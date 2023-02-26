@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Modul 2 HTML dan Git</title>
+</head>
+<body>
+    <h1>MODUL 2 HTML&GIT</h1>
+    <h2>MOCHMAD IKHSAN NURDIANSYAH</h2>
+    <h2>1301204071</h2>
+    <h2>IF-44-01</h2>
+
+    <h3>Contoh Hyperlink(Youtube)</h3>
+    <a href="https://www.youtube.com">Visit Youtube</a>
+
+    <h3>Contoh tabel</h3>
+    <div>
+        <table width="80%" height="50%" border="1">
+            <tr>
+                <th>Nama Lengkap</th>
+                <th>Kota Kelahiran</th>
+                <th>Umur</th>
+            </tr>
+            <tr>
+                <td>Ikhsan</td>
+                <td>Subang</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>achmad</td>
+                <td>Bandung</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Nurdin</td>
+                <td>Jakarta</td>
+                <td>22</td>
+            </tr>
+        </table>
+    </div>
+
+    <h3>Contoh tabel yang menggunakan colspan dan rowspan</h3>
+    <div>
+        <table width="80%" height="50%" border="1">
+            <tr>
+                <th rowspan="2">Nama Lengkap</th>
+                <th colspan="2">Gelar Pendidikan</th>
+                <th rowspan="2">Umur</th>
+            </tr>
+            <tr>
+            <th>Sarjana</th>
+                <th>Magister</th>
+            </tr>
+            <tr>
+                <td>Ikhsan</td>
+                        <td>S.Kom</td>
+                        <td>M.Sc</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Nurdin</td>
+                        <td>S.Si</td>
+                        <td>M.Si</td>
+                <td>27</td>
+            </tr>
+        </table>
+    </div>
+    <h3>Contoh untuk Menampilkan Image</h3>
+    <p>Sebelumnya kita saya menyimpan telyu.png pada folder assets</p>
+    <img src="assets/telyu.png" width="50%" height="50%" alt="telyu">
+    <p>Ini gambar Logo Telkom University</p>
+
+    <h3>Contoh menampilkan Audio dan Video Elemen</h3>
+    <p>Audio</p>
+    <audio controls>
+        <source src="assets/(Audio)mcr-blackparade.mp3" type="audio/mp3">
+    </audio>
+    <p>Video</p>
+    <video width="400" controls>
+        <source src="assets/(Video)mcr-blackparade.mp4" type="video/mp4" >
+    </video>
+    <p>Video Coutesy of
+    <a href="https://youtu.be/RRKJiM9Njr8" target="_blank">My Chemical Romance - Welcome To The Black Parade</a>
+    </p>
+
+
+    <h3>Contoh Membuat form</h3>
+    <form action="" method="post">
+        <table border="0" width="120">
+            <tr>
+                <td>Username</td>
+                <td>:</td>
+                <td width="900"><input type="text" name="nama_input" class="text-field" id="nama_id" placeholder="input Username" value="Praktikan" /></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>:</td>
+                <td> 
+                <input type="password" class="text-field" id="password_id" placeholder="Input Password"/></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                    <input type="radio" name="Jk" class="radioB" id="radioB" value="Pria">Pria</input>
+                    <input type="radio" name="Jk" class="radioB" id="radioB" value="Wanita">Wanita</input></td>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pilihan</td>
+                <td>:</td>
+                <td>
+                    <input type="checkbox" name="aktivitas" class="checkBox" id="checkB" value="SepakBola">SepakBola<br>
+                    <input type="checkbox" name="aktivitas" class="checkBox" id="checkB" value="Basket">Basket</input><br>
+                    <input type="checkbox" name="aktivitas" class="checkBox" id="checkB" value="Volly">Volly</input><br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pendidikan</td>
+                <td>:</td>
+                <td>
+                    <select name="pdk" class="dropdown" id="pkd_id">
+                        <option value="" selected>-----pilih-----</option>
+                        <option value="SD">SD</option>
+                        <option value="SMP">SMP</option>
+                        <option value="SMA">SMA</option>
+                        <option value="S1">S1</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>catatan</td>
+                <td>:</td>
+                <td>
+                    <textarea cols="40%" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" align="right">
+                    <button type="Button" name="btn" class="btnCan" id="btn_id">Cancel</button>
+                    <input type="Submit" name="btnsub" class="btnSub" id="sub_id" value="Submit"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
